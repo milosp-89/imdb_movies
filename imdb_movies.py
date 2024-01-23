@@ -1,9 +1,8 @@
 #### IMDB movies
 
 # modules and libraries:
-import os, requests as r, pandas as pd, gzip, shutil, math, warnings, time, requests, base64
+import os, requests as r, pandas as pd, gzip, shutil, math, warnings, time, base64
 from concurrent.futures import ThreadPoolExecutor as tpe
-from concurrent import futures
 
 # exclude messages and warnings:
 warnings.filterwarnings("ignore")
@@ -300,8 +299,8 @@ def git_push(fpath):
     encoded = base64.b64encode(file.encode()).decode()
 
     repo_owner = 'milosp-89'
-    repo_name = 'movie-finder_app'
-    token = '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'
+    repo_name = 'xxx'
+    token = 'xxx'
     filename = fpath.split('\\')[-1]
     url = f'https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{filename}'
 
